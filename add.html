@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <title>lem GUI</title>
+    <link rel="stylesheet" type="text/css" href="add.css">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+          <a href="index.html"><img src="assets/back.png" alt="back" width="30px"></a>
+          <div>  
+                  <label for="Name">Name of Build</label>
+                  <input type="text" id="name" name="name" placeholder="Enter the Name..">
+              
+                  <label for="url">URL of Admin</label>
+                  <input type="text" id="url" name="url" placeholder="Enter the Admin URL..">
+
+                  <input type="submit"id="submit" value="Add" onclick="addExtension(document.getElementById('name').value,document.getElementById('url').value)">
+                  <p id="success"></p>
+                </div>   
+               
+    </div>
+    <script>
+      require('./renderer.js')
+    </script>
+  </body>
+</html>

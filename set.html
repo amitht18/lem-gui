@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <title>lem GUI</title>
+    <link rel="stylesheet" type="text/css" href="set.css">
+    <script src="main.js"></script>
+  </head>
+  <body onload="setStarted()">
+    <div class="container">
+          <a href="index.html"><img src="assets/back.png" alt="back" width="30px"></a><br>
+          <div class="radio">
+            </div>
+        <div>
+          <input type="submit" id="set_button" value="Set" onclick="setBuild()">
+        </div>
+        <p id="set_success"></p>
+    </div>
+    <script>
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
